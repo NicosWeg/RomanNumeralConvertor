@@ -1,0 +1,107 @@
+:root {
+  --background-color: rgb(31, 48, 75);
+  --font-family: "Roboto";
+  --text-color: rgb(63, 73, 92);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.site-logo {
+  font-size: 48px;
+  color: white;
+  font-family: var(--font-family);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 400px;
+  height: 230px;
+  border-radius: 3px;
+  .topper {
+  font-size: 25px;
+  font-family: var(--font-family);
+  position: relative;
+  bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  }
+  .input {
+    width: 290px;
+    padding: 20px 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(138, 155, 205);
+    background-color: rgb(229, 235, 240);
+    color: var(--text-color);
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: bold;
+  }
+  input[type='number']:focus {
+      box-shadow: 0 0 5px rgba(74, 109, 162, 0.5); 
+  }
+  input[type=number]::-webkit-inner-spin-button {
+  height: 50px;
+  } 
+  .button {
+    font-size: 18px;
+    font-weight: bold;
+    width: 310px;
+    top: 20px;
+    padding: 12px;
+    position: relative;
+    background-color: rgb(148, 175, 216);
+    border: none;
+    border-radius: 6px;
+    color: var(--text-color);
+  }
+
+}
+
+  .output-container {
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 80px;
+    width: 400px;
+    background-color: rgb(238, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .output {
+      font-size: 22px;
+      font-family: var(--font-family);
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .invalid {
+    background-color: rgb(219, 38, 38);
+    color: rgb(65, 2, 2);
+    font-family: var(--font-family);
+  }
